@@ -4,10 +4,12 @@ const DemoForm = () => {
 
         const[prenom, setPrenom] = useState("")
         const[message, setMessage] = useState("")
+        const[pays, setPays] = useState("france")
 
         const onSubmit = (e) => {
             alert(`Bonjour ${prenom}`)
             alert(`Votre message : ${message}`)
+            alert(`Vous êtes né en ${pays}`)
         }
 
   return (
@@ -24,10 +26,8 @@ const DemoForm = () => {
             <p>
                 <label htmlFor="pays">Ou est tu né</label>
                 <select value={pays} onChange={(e) => setPays(e.target.value)}>
-                    <option value="france">France</option>
-                    <option value="espagne">Espagne</option>
-                    <option value="italie">Italie</option>
-                    <option value="allemagne">Allemagne</option>
+                    <option selected>France</option>
+                    <option>Belgique</option>
                 </select>
             </p>
         </form>

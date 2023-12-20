@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-    <FormulaireAjoutPrenom listePrenomsExistant={['Jean', 'Marie', 'Paul']} />
+    <FormulaireAjoutPrenom listePrenomsExistant={['JEAN', 'MARIE', 'PAUPAUL']} />
     </>
   )
 }

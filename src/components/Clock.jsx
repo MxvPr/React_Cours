@@ -11,7 +11,7 @@ const Clock = () => {
 
     return (
         <>
-            <h1>Voilà l'heure : {clock}</h1>
+            <h1>{clock}</h1>
         </>
     )
 
